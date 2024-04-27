@@ -14,7 +14,7 @@ const commentRoute = require("./routes/comments");
 //database
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb+srv://vansh:vansh123@cluster0.po6d5co.mongodb.net/");
+    await mongoose.connect("");
     console.log("database is connected successfully!");
   } catch (err) {
     console.log(err);
