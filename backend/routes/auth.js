@@ -58,7 +58,7 @@ router.get("/logout", async (req, res) => {
 //REFETCH USER
 router.get("/refetch", (req, res) => {
   const token = req.cookies.token;
-  jwt.verify(token, "121212", {}, async (err, data) => {
+  jwt.verify(token, "your_token_here", {}, async (err, data) => {
     if (err) {
       return res.status(404).json(err);
     }
